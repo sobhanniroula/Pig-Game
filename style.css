@@ -1,0 +1,148 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/background-blur.jpg);
+    background-position: center no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+.main-container {
+    position: absolute;
+    height: 65%;
+    width: 80%;
+    background-color: aliceblue;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 3px double;
+    border-radius: 10px;
+    border-color: aquamarine;
+    box-shadow: 10px 10px 30px #b3ffe6;
+}
+
+.player-area {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.player-name {
+    font-size: 40px;
+    color: #00cc88;
+    letter-spacing: 3px;
+    margin: 30px;
+    padding-left: 10px;
+}
+
+.player-score {
+    font-size: 80px;
+    color: #ff704d;
+
+}
+
+.current-score-area {
+    background-color: #00cc88;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+
+.current-word {
+    padding-top: 10px;
+    color: #404040;
+    letter-spacing: 1px;
+}
+
+.current-score {
+    padding: 5px;
+    margin: 10px;
+    color: antiquewhite;
+    font-size: 30px;
+}
+
+.button {
+
+    font-family: 'Quicksand';
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.button i {
+    padding: 5px;
+
+}
+
+button {
+    height: 20px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00cc88;
+    background: none;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.button: hover i {
+    margin-right: 5px;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.btn-new {
+    top: 20px;
+}
+
+.btn-roll {
+    top: 400px;
+}
+
+.btn-hold {
+    top: 480px;
+}
+
+img {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    ;
+}
+
+.active {
+    font-weight: 500;
+    background-color: #dcdcdc;
+}
+
+.winner {
+    background-color: rgba(102, 204, 0, 0.5);
+    font-weight: 800;
+
+}
