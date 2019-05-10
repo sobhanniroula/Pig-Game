@@ -35,12 +35,28 @@
         <button class="button btn-new"><i class="material-icons">add_circle_outline</i> Play a New Game</button>
         <button class="button btn-roll"><i class="material-icons">cached</i> Roll the dice</button>
         <button class="button btn-hold"><i class="material-icons">pan_tool</i> Hold the score</button>
+        <button class="button btn-rules"><i class="material-icons">info</i> Read the Rules </button>
 
 
         <img src="img/dice-4.png" alt="dice" class="dice" id="dice-2">
 
 
-    </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close"> &times; </span>
+                    <h4> RULES OF THE GAME </h4>
+                </div>
+                <div class="modal-body">
+                    <p> 
+1. The game has 2 players, playing in rounds. <br>
+2. In each turn, a player rolls a dice as many times as he whishes. Each result get added to his CURRENT score. <br>
+3. BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn. <br>
+4. The player can choose to 'Hold', which means that his ROUND score gets added to his GLOBAL score. After that, it's the next player's turn. <br>
+5. The first player to reach 100 points on GLOBAL score wins the game. <br> </p>
+                </div>
+            </div>
+        </div>
 
 
     <script src="script.js"> </script>

@@ -56,14 +56,14 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
 // the nextPlayer function goes here:
 function nextPlayer() {
     // 1. Change the active player:
-    if (activePlayer === '0') {
-        activePlayer = '1';
+    if (activePlayer === 0) {
+        activePlayer = 1;
     } else {
-        activePlayer = '0';
+        activePlayer = 0;
     }
     
     // 2. update the current score:
-    currentScore = '0';
+    currentScore = 0;
     document.getElementById('current-score-0').textContent = '0';
     document.getElementById('current-score-1').textContent = '0';
     
@@ -101,3 +101,35 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
 // what happens when we click the 'Play a New Game' button?:
 document.querySelector('.btn-new').addEventListener('click', first);
+
+
+// JavaScript codes for modal (pop-up window for rules):
+var modal = document.getElementById('myModal');
+var modalBtn = document.querySelector('.btn-rules');
+var closeModal = document.querySelector('.close');
+
+modalBtn.addEventListener('click', function() {
+   modal.style.display = 'block'; 
+});
+closeModal.addEventListener('click', function() {
+   modal.style.display = 'none'; 
+});
+
+
+/*
+modalBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closeModal.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+*/
